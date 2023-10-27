@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
 //create your first component
 const Home = () => {
 
@@ -19,7 +16,7 @@ const Home = () => {
 
 	const [selected, setSelected] = useState({})
 	return (
-		<section style={{ margin: "24px" }}>
+		<section style={{ width: "max-content", padding: "100px", margin: "auto", backgroundColor: "black" }}>
 			{
 				colors.map((el) => (<article>
 					<button onClick={() => setSelected(el)} style={{
