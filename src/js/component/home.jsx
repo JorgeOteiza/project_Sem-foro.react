@@ -27,8 +27,20 @@ const Home = () => {
 			position: 'relative',
 			borderRadius: '30px',
 		}}>
-			<div style={{ position: 'absolute', top: '-99px', left: '50%', transform: 'translateX(-50%)', width: '21px', height: '99px', backgroundColor: 'black' }}></div>
-			<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+			<div style={{
+				position: 'absolute',
+				top: '-99px',
+				left: '50%',
+				transform: 'translateX(-50%)',
+				width: '21px',
+				height: '99px',
+				backgroundColor: 'black'
+			}}></div>
+			<div style={{
+				display: 'flex',
+				flexDirection: 'column',
+				alignItems: 'center'
+			}}>
 				{colors.map((el) => (
 					<article key={el.name} style={{ marginBottom: '20px' }}>
 						<button
