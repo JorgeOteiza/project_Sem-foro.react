@@ -33,14 +33,15 @@ const Home = () => {
 					<article key={el.name} style={{ marginBottom: '20px' }}>
 						<button
 							onClick={() => handleClick(el)}
+							className={`button-with-shadow ${el.name === (selected ? selected.name : null) ? 'active' : ''}`}
 							style={{
 								borderRadius: '50%',
 								width: '96px',
 								height: '96px',
 								fontWeight: '600',
 								backgroundColor: el.color,
-								border: selected && el.name === selected.name ? '0 solid lightblue' : 'none',
-								boxShadow: selected && el.name === selected.name ? '0 0 60px 50px rgba(173, 216, 230, 1.0)' : 'none',
+								border: selected && el.name === selected.name ? '0 solid light' : 'none',
+								boxShadow: el.name === (selected ? selected.name : null) ? `0 0 70px 50px ${el.color}` : 'none',
 								transition: 'box-shadow 0.3s'
 							}}
 						></button>
