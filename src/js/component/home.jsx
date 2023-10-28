@@ -16,7 +16,7 @@ const Home = () => {
 
 	const [selected, setSelected] = useState({})
 	return (
-		<section style={{ width: "max-content", padding: "100px", margin: "auto", backgroundColor: "black" }}>
+		<section style={{ width: "max-content", padding: "100px", margin: "auto", backgroundColor: "black", }}>
 			{
 				colors.map((el) => (<article>
 					<button onClick={() => setSelected(el)} style={{
